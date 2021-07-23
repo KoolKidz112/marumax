@@ -18,10 +18,27 @@
             <div id="logopt">
                 <a href="">Log in</a>
                 <span> | </span>
-                <a href="">Sign up</a>
+                <a href="javascript:void(0)" id="suheader">Sign up</a>
             </div>
             <!-- <img src="./src/img/default.jpg" id="headpfp"> -->
         </div>
     </div>
+    <div id="user-modal" class="hide">
+        <div id="signup-modal">
+            <a href="javascript:void(0)" class="close">&times;</a>
+            <h1>Welcome to MaruMax</h1>
+            <p>We're so excited to have you here!</p>
+            <form id="signup-form">
+                <label for="user">Username</label>
+                <input type="text" maxlength="10" name="user" placeholder="Username">
+                <label for="email">E-Mail address</label>
+                <input type="email" name="email" placeholder="E-Mail">
+                <label for="pass">Password</label>
+                <input type="password" name="pass" placeholder="Password">
+                <button type="submit">Sign Up</button>
+            </form>
+        </div>
+    </div>
+    <script src="./src/script.js"></script>
 </body>
 </html>
