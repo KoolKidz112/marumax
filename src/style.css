@@ -1,0 +1,43 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+}
+
+#header {
+    width: 100vw;
+    background-color: #242423;
+    text-align: center;
+    color: white;
+    padding: 10px 5px 10px 5px;
+}
+
+#user {
+    float: right;
+}
+
+#headpfp {
+    width: 48px;
+    height: 48px;
+}
+
+a {
+    color: lightblue;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.2s;
+}
+
+a:hover {
+    color: white;
+    text-decoration: underline;
+}
+
+.title {
+    display: inline;
+    margin: 5px;
+}
