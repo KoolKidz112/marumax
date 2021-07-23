@@ -48,7 +48,7 @@ button {
     left: 0;
 }
 
-#signup-modal {
+#signup-modal, #login-modal {
     background-color: rgb(100,100,100);
     width: 350px;
     padding: 30px;
@@ -60,6 +60,7 @@ button {
 .close {
     float: right;
     font-weight: bold;
+    color: white;
 }
 
 input {
@@ -72,7 +73,7 @@ input:hover {
     border: 1px solid black;
 }
 
-#signup-modal > h1, #signup-modal > p {
+#signup-modal > h1, #signup-modal > p, #login-modal > h1, #login-modal > p {
     text-align: center;
 }
 
@@ -86,10 +87,6 @@ a {
 a:hover {
     color: white;
     text-decoration: underline;
-}
-
-.close {
-    color: white;
 }
 
 .title {
