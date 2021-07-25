@@ -1,99 +1,109 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
-    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande',
+               'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
-#header {
-    width: 100vw;
-    background-color: #242423;
-    text-align: center;
-    color: white;
-    padding: 10px 5px 10px 5px;
+nav {
+  background-color: #2f2620;
+  color: #ffffff;
+} nav > div {
+  overflow: auto;
+  width: 100vw;
+  max-width: 1200px;
+  margin: auto;
+  padding: 8px 16px;
+  display: flex;
+  align-items: flex-end;
+} nav > div > span[space] {
+  flex-grow: 2;
+  padding: 4px 16px;
+} nav a {
+  color: #c0ff90;
+} nav a:hover {
+  color: #c0ff90;
 }
 
-#user {
-    float: right;
-}
-
-#headpfp {
-    width: 48px;
-    height: 48px;
+[usercard] {
+  float: right;
+  display: flex;
+  flex-direction: row;
+} [usercard] text {
+  padding: 0px 8px;
+} [usercard] img {
+  width: 48px;
+  height: 48px;
 }
 
 label, input {
-    display: block;
+  display: block;
 }
 
 button {
-    border: 2px ridge gray;
-    background-color: rgb(53, 53, 53);
-    color: white;
-    border-radius: 3px;
-    padding: 10px;
-    margin-top: 8px;
+  border: 2px ridge gray;
+  background-color: rgb(53, 53, 53);
+  color: white;
+  border-radius: 3px;
+  padding: 10px;
+  margin-top: 8px;
 }
 
 #user-modal {
-    background-image: linear-gradient(rgba(45,45,45,0.6),rgba(75,75,75,0.55));
-    width: 100vw;
-    height: 100vh;
-    z-index: 1;
-    position: fixed;
-    top: 0;
-    left: 0;
+  background-image: linear-gradient(rgba(45,45,45,0.6),rgba(75,75,75,0.55));
+  width: 100vw;
+  height: 100vh;
+  z-index: 1;
+  position: fixed;
+  top: 0;
+  left: 0;
 }
 
 #signup-modal, #login-modal {
-    background-color: rgb(100,100,100);
-    width: 350px;
-    padding: 30px;
-    color: white;
-    margin: 20vh auto;
-    box-shadow: 10px 15px 10px rgba(20,20,20,0.5)
+  background-color: rgb(100,100,100);
+  width: 350px;
+  padding: 30px;
+  color: white;
+  margin: 20vh auto;
+  box-shadow: 10px 15px 10px rgba(20,20,20,0.5)
 }
 
 .close {
-    float: right;
-    font-weight: bold;
-    color: white;
+  float: right;
+  font-weight: bold;
+  color: white;
 }
 
 input {
-    border: 1px solid gray;
-    border-radius: 10px;
-    padding: 5px;
+  border: 1px solid gray;
+  border-radius: 10px;
+  padding: 5px;
 }
 
 input:hover {
-    border: 1px solid black;
+  border: 1px solid black;
 }
 
 #signup-modal > h1, #signup-modal > p, #login-modal > h1, #login-modal > p {
-    text-align: center;
+  text-align: center;
 }
 
 a {
-    color: lightblue;
-    text-decoration: none;
-    font-weight: bold;
-    transition: 0.2s;
+  color: lightblue;
+  text-decoration: none;
+  font-weight: bold;
+  transition: 0.2s;
 }
 
 a:hover {
-    color: white;
-    text-decoration: underline;
-}
-
-.title {
-    display: inline;
-    margin: 5px;
+  color: white;
+  text-decoration: underline;
 }
 
 .hide {
-    display: none;
+  display: none;
 }
